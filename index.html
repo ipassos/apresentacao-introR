@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Introdução ao R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Iara Passos" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introdução ao R
+## Aula 1 - Apresentação
+### Iara Passos
+### PPG Políticas Públicas/IFCH/UFRGS
+
+---
+
+class: inverse, middle, center
+background-image: url("index_files/figure-html/r-logo.jpg")
+background-size: contain
+
+
+---
+
+class: inverse, center, middle
+
+# Conhecendo o R
+
+---
+
+# O que é R?
+
+* Linguagem de programação de código aberto, criada no início dos anos 90 pelos estatísticos Robert Gentleman e Ross Ihaka, na Nova Zelândia. 
+
+
+--
+* Criada a partir da linguagem proprietária S.
+
+
+--
+
+* Posteriormente, foi desenvolvida em um esforço colaborativo em vários locais do mundo.
+
+--
+
+* Fornece um amplo espectro de técnicas gráficas e estatísticas em mais de 2000 pacotes.
+
+--
+
+* Também é possível programar métodos próprios para funcionalidades específicas.
+
+---
+# Por que R?
+
+* Código aberto
+
+--
+
+* Grande número de documentação/material disponível
+
+--
+
+* Mais leve e dinâmico
+
+--
+
+* Atualizações e correções constantes
+
+--
+
+* Integra com outras ferramentas e linguagens: \LaTeX, Markdown, HTML
+
+--
+
+* Ampla e ativa comunidade de usuários
+
+
+---
+&lt;img src="https://www.oreilly.com/library/view/the-art-of/9781593273842/httpatomoreillycomsourcenostarchimages915868.png.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: inverse, center, middle
+
+# A importância da comunidade
+
+---
+
+background-image:  url("index_files/figure-html/minions.gif")
+background-size: cover
+class: center, inverse
+
+---
+
+# Comunidade global
+
+* A comunidade constrói o R
+
+
+* Fóruns
+
+
+* Sites e repositórios
+
+
+* Encontros e meetups
+
+---
+
+class: inverse, center
+
+&lt;img src="index_files/figure-html/r-foundation.PNG" width="120%" style="display: block; margin: auto;" /&gt;
+
+
+# R Foundation
+
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/useR2020.PNG" width="120%" style="display: block; margin: auto;" /&gt;
+
+
+# useR!
+
+---
+class: inverse, center
+
+
+&lt;img src="index_files/figure-html/latinR.PNG" width="120%" style="display: block; margin: auto;" /&gt;
+
+# LatinR
+---
+
+class: inverse, center
+
+&lt;img src="index_files/figure-html/rday.PNG" width="120%" style="display: block; margin: auto;" /&gt;
+
+# RDay
+---
+
+class: inverse, center
+
+&lt;img src="index_files/figure-html/rladies-global.PNG" width="120%" style="display: block; margin: auto;" /&gt;
+
+# R-Ladies
+
+---
+class: inverse, center 
+.center[![](index_files/figure-html/users-poa.PNG)]
+
+.center[![](index_files/figure-html/rladies-poa.PNG)]
+
+# Comunidade Porto Alegre
+
+---
+class: inverse, middle, center
+
+# Por que aprender R?
+
+---
+background-image:  url("index_files/figure-html/dancecomputer.gif")
+background-size: cover
+class: center, inverse
+
+---
+
+# Dados 
+
+Possui várias das melhores ferramentas para construção de visualizações profissionais e pacotes para manipular os dados em poucas linhas de códigos.
+
+Capacidade de tratar grandes volumes de dados.
+
+.center[![](index_files/figure-html/logos.PNG)]
+
+---
+
+background-image:  url("index_files/figure-html/braveheart.gif")
+background-size: cover
+class: center, inverse
+
+# DATA!!
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/possibilidades.PNG" width="120%" style="display: block; margin: auto;" /&gt;
+
+# Infinitas possibilidades
+
+---
+class: inverse, center, middle
+
+# Plano das aulas
+---
+
+**Aula 1 Introdução**
+Data: **30/10** 
+1. Apresentação 
+
+2. Conhecendo o ambiente 
+
+3. Pacotes e ajuda 
+
+4. Primeiros passos
+
+5. Objetos e classes de objetos 
+
+6. Vetores
+
+**Aula 2 Objetos avançados** 
+Data: **06/11** 
+1. Factors
+
+2. Matrizes 
+
+3. Dataframes
+
+4. Listas
+
+---
+**Aula 3 Manipulando dados** 
+Data: **13/11** 
+
+1. Importando bancos de dados
+
+2. Tratamento inicial dos dados 
+
+3. Estatísticas descritivas 
+
+4. _[Tidyverse](https://www.tidyverse.org/)_ e o pacote _[dplyr](https://dplyr.tidyverse.org/)_
+
+5. Exportando bancos de dados
+
+
+**Aula 4 Visualização dos dados** 
+Data: **20/11** 
+1. Gráficos básicos no R 
+
+2. O pacote _[ggplot2](https://ggplot2.tidyverse.org/)_  
+
+3. Exportando gráficos  
+
+**Aula 5 Apresentação dos dados e relatórios dinâmicos**
+Data: **04/12** 
+1. O _[Markdown](https://www.markdownguide.org/)_ e o pacote _[RMarkdown](https://rmarkdown.rstudio.com/)_
+
+2. Confecção de relatórios\par
+
+---
+# Adicionais (optativos)
+
+* Listas de exercícios
+
+* Projeto final
+
+# Toda documentação do curso
+
+* Disponível no repositório do Gitlab
+
+# Contato
+
+* Sempre por e-mail! &lt;iaracpassos@gmail.com&gt;
+
+---
+class: inverse, center, middle
+
+# Algumas considerações antes de começarmos
+
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/catcomputer.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, center, middle
+
+# R é uma linguagem e ambiente de programação.
+--
+
+## Muito diferente de outros programas mais utilizados (SPSS, Excel, etc).
+
+--
+## O curso, apesar de introdutório, tem muito conteúdo!! 
+
+---
+&lt;img src="index_files/figure-html/elnb.gif" width="65%" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, center, middle
+
+# Dica nº 1
+---
+background-image:  url("index_files/figure-html/payatention.gif")
+background-size: cover
+class: center, inverse
+
+---
+class: inverse, center, middle
+
+# Dica nº 2
+---
+background-image:  url("index_files/figure-html/late.gif")
+background-size: cover
+class: center, inverse
+
+---
+class: inverse, center
+
+# Dica nº 3
+
+&lt;img src="index_files/figure-html/focus.gif" width="70%" style="display: block; margin: auto;" /&gt;
+
+# Detalhes importam!
+---
+class: inverse, center, middle
+
+# No R, cada detalhe importa para o código rodar.
+
+--
+
+# Portanto, é muito comum o código não rodar por causa de erros. 
+
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/angrycomputer.gif" width="100%" style="display: block; margin: auto;" /&gt;
+
+# Como NÃO lidar com erros
+---
+class: inverse, center, middle
+
+&lt;img src="index_files/figure-html/muppets2.gif" width="90%" style="display: block; margin: auto;" /&gt;
+
+# Continua dando erro?
+
+
+---
+class: inverse, center, middle
+
+# Dica nº 4
+
+---
+
+class: inverse, center, middle
+
+# Não se desespere!!
+
+---
+
+class: inverse, center
+
+&lt;img src="index_files/figure-html/calmdown.gif" width="85%" style="display: block; margin: auto;" /&gt;
+
+# Respire fundo! 
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/help.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+# Peça ajuda!
+---
+
+class: inverse, center
+
+&lt;img src="index_files/figure-html/ahno.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+# **NÃO** desista! 
+
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/gc.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+# Uma hora a gente encontra o erro!
+---
+
+# Tá tudo indo tranquilo?
+
+--
+
+# Ajude o colega!
+
+--
+&lt;img src="index_files/figure-html/batmanrobin.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: inverse, center, middle
+
+# Dica nº 5
+---
+
+class: inverse, center, middle
+
+# Vamos aprender vários conceitos/definições novas
+
+
+---
+class: inverse, center, middle
+
+&lt;img src="index_files/figure-html/lkrwtf.gif" width="90%" style="display: block; margin: auto;" /&gt;
+
+# É normal não entendermos algo!
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/nazare.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+# Ficou com dúvida?
+---
+class: inverse, center, middle
+
+# Pergunte!
+---
+
+class: inverse, center, middle
+
+# Dica nº 6
+
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/cat-exercise.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+# Faça os exercícios!
+
+---
+
+
+class: inverse, center, middle
+
+# Dica nº 7
+
+---
+
+class: inverse, center
+
+&lt;img src="index_files/figure-html/scientist.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+# Tentativa e erro
+---
+class: inverse, center, middle
+
+
+# No final vai dar tudo certo!
+
+## O código vai rodar!!
+
+---
+background-image:  url("index_files/figure-html/alive.gif")
+background-size: cover
+class: center, inverse
+
+---
+class: inverse, center, middle
+
+# Regra nº 1
+--
+
+## Ninguém fica 
+--
+
+##  pra trás!
+
+---
+background-image:  url("index_files/figure-html/catdeal.gif")
+background-size: cover
+class: center, inverse
+---
+class: inverse, center, middle
+
+# Regra nº 2
+
+---
+class: inverse, center
+
+&lt;img src="index_files/figure-html/batmandance.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+
+# Estamos aqui para nos divertir! 
+
+---
+
+class: inverse, center
+
+&lt;img src="index_files/figure-html/dance.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+# Vamos aprender R? 
+---
+background-image:  url("index_files/figure-html/yes2.gif")
+background-size: cover
+class: center, inverse
+
+---
+
+class: inverse, center
+
+&lt;img src="index_files/figure-html/ahwg.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+### Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
